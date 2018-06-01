@@ -1,0 +1,14 @@
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.DAL\bin\Debug\GlitterApp.DAL.dll.config
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.DAL\bin\Debug\GlitterApp.DAL.dll
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.DAL\bin\Debug\GlitterApp.DAL.pdb
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.DAL\bin\Debug\EntityFramework.dll
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.DAL\bin\Debug\EntityFramework.xml
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.DAL\obj\Debug\GlitterApp.DAL.csproj.CoreCompileInputs.cache
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.DAL\obj\Debug\GlitterApp.DAL.csproj.CopyComplete
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.DAL\obj\Debug\GlitterApp.DAL.dll
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.DAL\obj\Debug\GlitterApp.DAL.pdb
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.DAL\obj\Debug\GlitterApp.DAL.csprojAssemblyReference.cache
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.DAL\bin\Debug\GlitterApp.SharedLayer.dll
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.DAL\bin\Debug\GlitterApp.SharedLayer.pdb

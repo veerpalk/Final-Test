@@ -1,0 +1,6 @@
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.SharedLayer\bin\Debug\GlitterApp.SharedLayer.dll
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.SharedLayer\bin\Debug\GlitterApp.SharedLayer.pdb
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.SharedLayer\obj\Debug\GlitterApp.SharedLayer.csproj.CoreCompileInputs.cache
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.SharedLayer\obj\Debug\GlitterApp.SharedLayer.dll
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.SharedLayer\obj\Debug\GlitterApp.SharedLayer.pdb
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.SharedLayer\obj\Debug\GlitterApp.SharedLayer.csprojAssemblyReference.cache

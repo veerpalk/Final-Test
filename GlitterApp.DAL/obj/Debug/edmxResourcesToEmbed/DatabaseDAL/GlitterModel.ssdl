@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MicoBloggingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Tweet">
+    <Key>
+      <PropertyRef Name="Tid" />
+    </Key>
+    <Property Name="Tid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Body" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="CreationTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TweetLikeDislike">
+    <Key>
+      <PropertyRef Name="LDid" />
+    </Key>
+    <Property Name="LDid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TweetId" Type="int" />
+    <Property Name="LikedDislikedBy" Type="int" />
+    <Property Name="LikeDislike" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Uid" />
+    </Key>
+    <Property Name="Uid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Contact" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Country" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ImageUrl" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UserFollower">
+    <Key>
+      <PropertyRef Name="Fid" />
+    </Key>
+    <Property Name="Fid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="FollowerId" Type="int" />
+  </EntityType>
+  <Association Name="FK_Tweet_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Tweet" Type="Self.Tweet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Uid" />
+      </Principal>
+      <Dependent Role="Tweet">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TweetLikeDislike_Tweet">
+    <End Role="Tweet" Type="Self.Tweet" Multiplicity="0..1" />
+    <End Role="TweetLikeDislike" Type="Self.TweetLikeDislike" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tweet">
+        <PropertyRef Name="Tid" />
+      </Principal>
+      <Dependent Role="TweetLikeDislike">
+        <PropertyRef Name="TweetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TweetLikeDislike_TweetLikeDislike">
+    <End Role="TweetLikeDislike" Type="Self.TweetLikeDislike" Multiplicity="1" />
+    <End Role="TweetLikeDislike1" Type="Self.TweetLikeDislike" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TweetLikeDislike">
+        <PropertyRef Name="LDid" />
+      </Principal>
+      <Dependent Role="TweetLikeDislike1">
+        <PropertyRef Name="LDid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TweetLikeDislike_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="TweetLikeDislike" Type="Self.TweetLikeDislike" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Uid" />
+      </Principal>
+      <Dependent Role="TweetLikeDislike">
+        <PropertyRef Name="LikedDislikedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserFollower_User2">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="UserFollower" Type="Self.UserFollower" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Uid" />
+      </Principal>
+      <Dependent Role="UserFollower">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserFollower_User3">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="UserFollower" Type="Self.UserFollower" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Uid" />
+      </Principal>
+      <Dependent Role="UserFollower">
+        <PropertyRef Name="FollowerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MicoBloggingModelStoreContainer">
+    <EntitySet Name="Tweet" EntityType="Self.Tweet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TweetLikeDislike" EntityType="Self.TweetLikeDislike" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserFollower" EntityType="Self.UserFollower" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Tweet_User" Association="Self.FK_Tweet_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Tweet" EntitySet="Tweet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TweetLikeDislike_Tweet" Association="Self.FK_TweetLikeDislike_Tweet">
+      <End Role="Tweet" EntitySet="Tweet" />
+      <End Role="TweetLikeDislike" EntitySet="TweetLikeDislike" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TweetLikeDislike_TweetLikeDislike" Association="Self.FK_TweetLikeDislike_TweetLikeDislike">
+      <End Role="TweetLikeDislike" EntitySet="TweetLikeDislike" />
+      <End Role="TweetLikeDislike1" EntitySet="TweetLikeDislike" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TweetLikeDislike_User" Association="Self.FK_TweetLikeDislike_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="TweetLikeDislike" EntitySet="TweetLikeDislike" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserFollower_User2" Association="Self.FK_UserFollower_User2">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserFollower" EntitySet="UserFollower" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserFollower_User3" Association="Self.FK_UserFollower_User3">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserFollower" EntitySet="UserFollower" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

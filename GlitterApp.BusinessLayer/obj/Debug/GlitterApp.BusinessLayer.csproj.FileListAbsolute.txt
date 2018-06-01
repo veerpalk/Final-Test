@@ -1,0 +1,12 @@
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.BusinessLayer\bin\Debug\GlitterApp.BusinessLayer.dll
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.BusinessLayer\bin\Debug\GlitterApp.BusinessLayer.pdb
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.BusinessLayer\obj\Debug\GlitterApp.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.BusinessLayer\obj\Debug\GlitterApp.BusinessLayer.dll
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.BusinessLayer\obj\Debug\GlitterApp.BusinessLayer.pdb
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.BusinessLayer\obj\Debug\GlitterApp.BusinessLayer.csprojAssemblyReference.cache
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.BusinessLayer\bin\Debug\GlitterApp.DAL.dll
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.BusinessLayer\bin\Debug\GlitterApp.SharedLayer.dll
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.BusinessLayer\bin\Debug\GlitterApp.DAL.pdb
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.BusinessLayer\bin\Debug\GlitterApp.DAL.dll.config
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.BusinessLayer\bin\Debug\GlitterApp.SharedLayer.pdb
+C:\Users\veerpalkaur\Documents\Visual Studio 2017\Projects\API+MVC+Angular\GlitterApp\GlitterApp.BusinessLayer\obj\Debug\GlitterApp.BusinessLayer.csproj.CopyComplete
